@@ -49,7 +49,7 @@ function ContactForm({ data }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={s.form}>
       <label className={s.contacts__label}>
         Name
         <br />
@@ -80,7 +80,7 @@ function ContactForm({ data }) {
         />
       </label>
       <br />
-      <button type="submit">Add contact</button>
+      <button type="submit" className={s.button}>Add contact</button>
     </form>
   );
 }

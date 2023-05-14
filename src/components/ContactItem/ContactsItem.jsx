@@ -7,7 +7,10 @@ export default function ContactsItem({ erase, filtered }) {
     return (
       <li key={nanoid()} className={s.contacts__item}>
         {elem.name}: {elem.number}
-        <button type="button" onClick={() => erase(elem.name)}>
+        <button
+          type="button"
+          className={s.button}
+          onClick={() => erase(elem.name)}>
           Delete
         </button>
       </li>
